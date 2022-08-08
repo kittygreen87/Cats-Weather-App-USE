@@ -2,15 +2,140 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SheCodes</title>
-    <link rel="stylesheet" href="PLUSWK1L6.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous">
+    </script>
+   
+    
+    <title>Cat's Weather App</title>
+    <link href="source/style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
-    <header>
-      <h1>
-        👩‍💻 SheCodes is a Coding Workshop for Women
-      </h1>
-      <h2>
-        Access a new career in Technology
-      </h2>
+    <div class="video-wrapper">
+      <video src="videos/cloudy-sky.mp4" autoplay loop muted id="weathervid"></video>
+    </div>
+    <div class="container" id="page-container">
+    <h1>
+      <div class="weather-app">
+            <div class="row">
+                    <div class="col-5">
+                    <form class="search-form" id="search-form">
+                        <input 
+                            class="inputCity"
+                            type="search" 
+                            placeholder="Enter the City" 
+                            size="42" 
+                            id="search-text-input"
+                            />
+                    <div class="col-3">
+                        <input
+                            type="submit"
+                            value="Search"
+                            class="form-control btn btn-primary shadow-sm"
+                            />
+                    </div>
+                    </div> 
+            </div>
+    </h1>
+      
+        <h2>
+        <div class="today-weather">
+                
+              
+          <div class="row">
+                <div class="col-4">
+                        <h3 id="city"></h3>
+                        <h4 id="date"> </h4>
+                        </div>
+            <div class="col-4">
+              <ul>
+                <li id="description"></li>
+                <li> 
+                    <div class="float-left">
+                      <span class="temperature" id="temperature"></span
+                        <span class="units">
+                            <a href="#" id="fahrenheit-convert">°F</a>
+                            |
+                            <a href="#" id="celsius-convert">°C</a> 
+                        </span>
+                </li>
+
+              </ul>
+               
+            </div>
+            <div class="col-4">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </h2>
+     
+
+      <hr width="100%" height="8px" />
+      <div class="daily-container">
+        <h5>DAILY FORECAST</h5>
+            <div class="row">
+                <div class="col-3">
+                    <div class="weather-day">Sunday</div>
+                        <div class="weather-icon">☀</div>
+                            <br />
+                                <div class="temps">
+                                <span class="temp-max">77°F</span>
+                                <span class="temp-min">53°F</span>
+                                </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="weather-day">Monday</div>
+                        <div class="weather-icon">☀</div>
+                            <br />
+                                <div class="temps">
+                                <span class="temp-max">77°F</span>
+                                <span class="temp-min">53°F</span>
+                                </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="weather-day">Tuesday</div>
+                    <div class="weather-icon">☀</div>
+                        <br />
+                            <div class="temps">
+                            <span class="temp-max">77°F</span>
+                            <span class="temp-min">53°F</span>
+                            </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="weather-day">Wednesday</div>
+                        <div class="weather-icon">☀</div>
+                            <br />
+                                <div class="temps">
+                                <span class="temp-max">77°F</span>
+                                <span class="temp-min">53°F</span>
+                                </div>
+                </div>
+
+              
+                </div> 
+            </div>
+      </div>
+    </div>
+    <script src="source/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+hr {
+  border-top: 10px double #050a4d;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: x-large;
+  font-family: "Times New Roman", Times, serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3 {
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(6, 4, 109);
+}
+
+h4 {
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(6, 4, 109);
+}
+
+h5 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(6, 4, 109);
+}
+
+.weather-app {
+  text-align: center;
+  margin: 50px 50px 50px 50px;
+}
+.current-conditions {
+  text-align: center;
+}
+
+.today-weather {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: x-large;
+  color: rgb(6, 4, 109);
+  background-color: rgb(237, 245, 242, 0.6);
+  border: 1px solid rgb(6, 4, 109);
+  border-radius: 5px 5px 5px 5px;
+  margin: 50px 50px 50px 50px;
+  padding: 30px 10px 30px 10px;
+}
+
+.daily-container {
+  background-color: rgb(237, 245, 242, 0.5);
+  border: 1px solid rgb(6, 4, 109);
+  border-radius: 5px 5px 5px 5px;
+  padding: 50px 30px 50px 30px;
+  margin: 50px 50px 50px 50px;
+}
+
+.weather-day {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(6, 4, 109);
+  font-size: 35px;
+}
+
+.weather-icon {
+  text-align: center;
+}
+
+.temp-min {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: rgb(7, 7, 82);
+  font-size: x-large;
+  text-align: center;
+}
+
+.temp-max {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: rgb(97, 12, 12);
+  font-size: x-large;
+  text-align: center;
+}
+
+#weathervid {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.temps {
+  font-size: 40px;
+  text-align: center;
+}
+
+.units {
+  font-size: 15px;
+}
+

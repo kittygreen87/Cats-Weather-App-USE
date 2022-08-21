@@ -70,10 +70,6 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = 33;
 }
 
-let fahrenheitConvert = document.querySelector("#fahrenheit-convert");
-fahrenheitConvert.addEventListener("click", convertToFahrenheit);
 
-let celsiusConvert = document.querySelector("#celsius-convert");
-celsiusConvert.addEventListener("click", convertToCelsius);
 
 search("Wilmington");

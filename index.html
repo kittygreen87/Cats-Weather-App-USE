@@ -54,23 +54,32 @@
         <h2>
         <div class="today-weather">  
           <div class="row">
-                <div class="col-6">
-                    <ul>
-                        <li id="city"></li>
-                            <li id="date"> </li>
-                                </br>
-                                    <li>Humidity: <span id="humidity"></span>%</li>
-                                        <li>Wind: <span id="wind"></span> km/h</li>
-                    </ul>
-                </div>
-                <div class="col-6">
+                <div class="col-12">
                     <div class="d-flex">
-                        <li id="d-flex weather-temperature">
-                            <strong id="description"></strong>
-                            <img src="" id="icon"/>
-                                <strong id="temperature"></strong>
-                                    <span class="units"> °F</span>
-                        </li>
+                        <ul>
+                            <li id="city"></li>
+                            <li id="date"> </li>    
+                            <li id="d-flex weather-temperature">
+                                <strong id="description"></strong>
+                                    <img src="" id="icon"/>
+                                        <strong id="temperature"></strong>
+                                            <span class="units"> °F</span>
+                            </li>
+                            <li>
+                                Humidity: 
+                                    <span id="humidity"></span>
+                                    % <img src="https://cdn-icons.flaticon.com/png/512/5213/premium/5213593.png?token=exp=1661111851~hmac=ef55b6a6511b24765abb7646a3aa963b"
+                                    width="25" 
+                                    height="25">
+                            </li>
+                            <li>
+                                Wind: 
+                                    <span id="wind"></span> 
+                                    mph <img src="https://cdn-icons-png.flaticon.com/512/959/959737.png"
+                                    width="25" 
+                                    height="25">
+                            </li>
+                        </ul>
                     </div>
                 </div>   
           </div>

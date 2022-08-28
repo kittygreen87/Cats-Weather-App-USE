@@ -42,11 +42,6 @@ h5 {
   margin: 50px 50px 50px 50px;
   padding: 30px 10px 30px 10px;
 }
-.current-conditions {
-  text-align: left;
-  padding: 50px 30px 50px 30px;
-  margin: 50px 50px 50px 50px;
-}
 
 .today-weather {
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -77,10 +72,6 @@ h5 {
   text-align: center;
   color: rgb(10, 79, 206);
   font-size: 35px;
-}
-
-.weather-icon {
-  text-align: center;
 }
 
 .temp-min {

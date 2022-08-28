@@ -15,6 +15,8 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  displayForecast();
 }
 function search(city) {
   let apiKey = "f224d8dee04e14b035e866c5ac20bea9";
@@ -50,8 +52,36 @@ function formatDate(date) {
     "Saturday,",
   ];
   let day = days[dayIndex];
-
   return `${day} ${hours}:${minutes}`;
+}
+
+function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
+
+    let forecastHTML = `<div class="row">`;
+    let days = ["Monday", "Tuesday", "Wednesday", "Thursday"];
+    days.forEach(function (day) {
+      forecastHTML = forecastHTML +
+        `
+        <div class="col-3">
+          <div class="weather-day">${day}
+              </div>
+                  <img
+                    src="http://openweathermap.org/img/wn/50d@2x.png"
+                    alt=""
+                    width="42"
+                  />
+                <br/>
+                <div class="temps">
+                <span class="temp-max">77°F</span>
+                <span class="temp-min">53°F</span>
+                </div>
+        </div>
+    `;
+    }); 
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+
 }
 
 let dateElement = document.querySelector("#date");
@@ -69,7 +99,5 @@ function convertToCelsius(event) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = 33;
 }
-
-
 
 search("Wilmington");

@@ -96,19 +96,20 @@ function displayForecast(response) {
         <div class="col-3">
           <div class="weather-day">${formatDay(forecastDay.dt)}
               </div>
-             
                   <img
                     src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
                     alt=""
-                    width="42"
-                  />
+                    width="80"
+                    id="dailyIcon">
+                  
                 <br/>
                 <div class="temps">
                 <span class="temp-max">
                 ${Math.round(
                   forecastDay.temp.max
                   )}°F </span>
-                <span class="temp-min">
+                  </br>
+                  <span class="temp-min">
                 ${Math.round(
                   forecastDay.temp.min
                   )}°F </span>

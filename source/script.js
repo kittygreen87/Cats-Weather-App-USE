@@ -76,7 +76,7 @@ function formatDate(date) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let days = ["SUN", "MON", "TUES", "WED", "THURS", "FRI", "SAT"];
 
   return days[day];
 
@@ -87,13 +87,13 @@ function displayForecast(response) {
 
     let forecastElement = document.querySelector("#forecast");
 
-    let forecastHTML = `<div class="row">`;
+    let forecastHTML = `<div class="row row-cols-5">`;
     
     forecast.forEach(function (forecastDay, index) {
       if (index < 5) {
       forecastHTML = forecastHTML +
         `
-        <div class="col-2">
+        <div class="col"> 
           <div class="weather-day">${formatDay(forecastDay.dt)}
               </div>
                   <img
